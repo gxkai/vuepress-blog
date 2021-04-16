@@ -5,8 +5,7 @@
   "scripts": {
     "autopush": "npm run build && ./utils/deploy.sh",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "buildSubpath": "export VUEPRESS_BASE=/gxkai/ || set VUEPRESS_BASE=/gxkai/ && vuepress build docs"
+    "build": "vuepress build docs"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-rss": "^1.0.1",
