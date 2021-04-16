@@ -79,7 +79,7 @@ module.exports = {
     "authorAvatar": "/logo.png",
     "record": "",
     recordLink: "",
-    "startYear": "2019",
+    "startYear": "2021",
     repo: '',
     // // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
