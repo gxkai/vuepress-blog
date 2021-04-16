@@ -99,11 +99,5 @@ module.exports = {
       }
     }
   },
-  plugins: [
-    ['@vuepress-reco/vuepress-plugin-rss', {
-      site_url: 'https://gxkai.github.io/blog.github.io/',
-      copyright: 'Y&K'
-    }],
-  ]
-
+  plugins: []
 }
