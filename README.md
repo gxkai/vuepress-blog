@@ -25,9 +25,7 @@ categories:
 
 ```s
 tags:
-工具 陪娃 育娃软件 市场经济 公众号文章 数据库 Node.js Vue.js PostgREST Linux 测绘小程序
 categories:
-技术 儿童 个人 思考
 ```
 
 2. 评论使用 Valine
@@ -50,9 +48,6 @@ yarn dev
 # 编译
 yarn build
 
-# 编译为非根目录站点 （还需修改package.json中的script中的参数）
-yarn buildSubpath
-
 # 自动上传静态部署文件
 yarn autopush
 ```
@@ -70,22 +65,6 @@ vuepress 通过一定*号称简单*的配置之后，为每一个 md 文件生�
 #### 无法热更新
 
 修改 config.js 后，是没办法热更新的，只能 ctrl+c 结束任务然后重新 yarn dev
-
-#### 百度统计代码
-
-增加了一个 utils/db_hm.js 脚本，在 build 之后手动复制统计代码到首页 index.html 中。请自行从百度申请统计和推送链接代码。
-
-#### 使用 Github Aciton 自动发布到 Github Page
-
-开启项目 action。
-
-开启 page。并使用 master 分支为 Page 源地址。
-
-设置 secret。在[Settings-tTokens](https://github.com/settings/tokens)里选择第一项 repo 生成 token，复制 token 到项目 Settings-Secrets 下新建的`ACCESS_TOKEN`中
-
-然后 git push 就好，CI 脚本自动发布。
-
-如果要发布到**非根目录**。要 修改 package.json 中 `buildSubpath` 命令里的两处： `VUEPRESS_BASE=/gxkai/` 中的 `gxkai` 替换为自己要部署的子目录名。然后修改 Action 脚本 `nodejs.yml` 中最后一行脚本中的 `npm run build` 为 `npm run buildSubpath` 。
 
 ## 相关技术
 

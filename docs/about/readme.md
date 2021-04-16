@@ -6,7 +6,7 @@ categories:
 tags:
   - 简介
 ---
-
+<!-- more -->
 ## 源代码平台
 
 [github](https://github.com/gxkai) :gxkai

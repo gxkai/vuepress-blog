@@ -25,6 +25,7 @@ module.exports = {
       appKey: 'R7EUWS9bcmFIVPxLLw6NXaVI', // your appKey
       placeholder: '吐槽一下吧'
     },
+    noFoundPageByTencent: true,// 腾讯公益
     "nav": [
       {
         "text": "首页",
